@@ -1,0 +1,3 @@
+[submodule "pofile_diff_reduce_app"]
+	path = DjangoPoFileDiffReduceProject/pofile_diff_reduce
+	url = git@github.com:PeteCoward/DjangoPoFileDiffReduce.git
