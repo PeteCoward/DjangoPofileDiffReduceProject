@@ -1,0 +1,21 @@
+{% load i18n %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<body>
+  <script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
+  <script type="text/javascript" src="{% static 'js/translated_javascript.js' %}"></script>
+
+  <h1>{% trans 'In template translated content' %}</h1>
+  <h1>{{ python_translated_content }}</h1>
+  <h1 id="translated_javascript_container">
+  </h1>
+  <script type="text/javascript">
+    var translated_javascript_container = document.getElementById('translated_javascript_container');
+    translated_javascript_container.innerHTML = javascript_translated_content;
+  </script>
+
+
+</body>
+</html>
