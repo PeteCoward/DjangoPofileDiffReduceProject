@@ -7,13 +7,32 @@
   <script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
   <script type="text/javascript" src="{% static 'js/translated_javascript.js' %}"></script>
 
-  <h1>{% trans 'In template translated content' %}</h1>
-  <h1>{{ python_translated_content }}</h1>
-  <h1 id="translated_javascript_container">
+  <h1>
+      {% trans 'In template translated content' %}
   </h1>
+  <p>
+      {% blocktrans %}
+      A long multiline bit of text that is designed to test the no-wrap feature of gettext. 
+      We want the po files to be generated without wrapping both on development machines and on the server when they are updated by Rosetta
+      {% endblocktrans %}
+  </p>
+
+  <h1>
+      {{ python_translated_header }}
+  </h1>
+  <p>
+      {{ python_translated_paragraph }}
+  </p>
+
+  <h1 id="translated_javascript_header">
+  </h1>
+  <p id="translated_javascript_paragraph">
+  </p>
   <script type="text/javascript">
-    var translated_javascript_container = document.getElementById('translated_javascript_container');
-    translated_javascript_container.innerHTML = javascript_translated_content;
+    var translated_javascript_container = document.getElementById('translated_javascript_header');
+    translated_javascript_container.innerHTML = javascript_translated_header;
+    var translated_javascript_paragraph = document.getElementById('translated_javascript_paragraph');
+    translated_javascript_paragraph.innerHTML = javascript_translated_paragraph;
   </script>
 
 

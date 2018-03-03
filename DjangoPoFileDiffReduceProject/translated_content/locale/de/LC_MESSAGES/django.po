@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-26 09:02+0000\n"
+"POT-Creation-Date: 2018-02-26 11:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: translated_content/templates/translated_content/index.html:10
+
 msgid "In template translated content"
 msgstr ""
 
-#: translated_content/views.py:11
+msgid ""
+"\n"
+"      A long multiline bit of text that is designed to test the no-wrap feature of gettext. \n"
+"      We want the po files to be generated without wrapping both on development machines and on the server when they are updated by Rosetta\n"
+"      "
+msgstr ""
+
 msgid "A translation from python"
+msgstr ""
+
+msgid ""
+"A translation from python that is multiline.\n"
+"                It goes on and an and on, no-one knows when it will end, but it won;t end before the end\n"
+"                of one line oh no"
 msgstr ""

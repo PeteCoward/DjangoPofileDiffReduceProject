@@ -8,5 +8,8 @@ class IndexView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['python_translated_content'] = _('A translation from python')
+        context['python_translated_header'] = _('A translation from python')
+        context['python_translated_paragraph'] = _('''A translation from python that is multiline.
+                It goes on and an and on, no-one knows when it will end, but it won;t end before the end
+                of one line oh no''')
         return context
