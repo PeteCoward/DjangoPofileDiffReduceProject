@@ -1,3 +1,4 @@
+// Hello world
 var javascript_translated_header = gettext('Javascript translated content');
 var javascript_translated_paragraph = gettext('A rather long string of English text, an error message ' +
                'actually that just keeps going and going -- an error ' +

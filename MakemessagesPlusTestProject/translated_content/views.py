@@ -3,6 +3,7 @@ from django.views.generic.base import TemplateView
 
 
 class IndexView(TemplateView):
+    ''' an index view '''
 
     template_name = "translated_content/index.html"
 

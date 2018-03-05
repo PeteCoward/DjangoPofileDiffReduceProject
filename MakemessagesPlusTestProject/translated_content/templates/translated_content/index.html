@@ -3,12 +3,16 @@
 
 <!DOCTYPE html>
 <html>
+<head>
+</head>
+
 <body>
   <script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
   <script type="text/javascript" src="{% static 'js/translated_javascript.js' %}"></script>
 
+  <!---  -->
   <h1>
-      {% trans 'In template translated content' %}
+      {% trans 'In Template translated content' %}
   </h1>
   <p>
       {% blocktrans %}

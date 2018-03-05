@@ -1,5 +1,5 @@
 """
-WSGI config for DjangoPoFileDiffReduceProject project.
+WSGI config for MakeMessagesPlusTestProject project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "DjangoPoFileDiffReduceProject.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "MakeMessagesPlusTestProject.settings")
 
 application = get_wsgi_application()
