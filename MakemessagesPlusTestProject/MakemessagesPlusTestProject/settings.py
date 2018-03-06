@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'translated_content',
-    'pofile_diff_reduce',
+    'makemessagesplus',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
